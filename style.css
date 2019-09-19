@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.avatar{
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.download_resume{
+    display: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#resume_code{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.code_con{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.write_speed{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.speed_description{
+    opacity: 0;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.write_speed:hover .speed_description{
+    opacity: 1;
+}
+
+.speed_status{
+    /* border: 1px solid #000; */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    transition: all .2s;
+}
+
+.write_speed:hover .speed_status{
+    /* font-size: 35px; */
+    transform: scale(1.5);
+}
+
+.skipper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skip_resume,
+.skip_all{
+    padding: 12px 22px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+
+.skip_resume{
+    animation: change 2s infinite alternate;
+}
+
+.skip_all{
+    animation: change 2s infinite alternate-reverse;
+}
+
+@keyframes change{
+    0% {
+        background-color: #455A6426;
+    }
+    100% {
+        background-color: #455a64;
+    }
+}
+
+.download_show{
+    display: inline-block;
+    width: 100%;
+    height: 58px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #CFD8DC;
+    color: #CFD8DC;
+    text-align: center;
+    line-height: 58px;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+
+code {
+    padding: 2px 4px;
+    margin-right: 4px;
+    border-radius: 4px;
+    color: #455A64;
+    background-color: #455a6426;
+    height: 18px;
+    line-height: 18px;
+    font-size: 90%;
+    font-family: Consolas,monospace,serif;
+  }
